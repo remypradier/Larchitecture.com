@@ -1,2 +1,2 @@
 # Larchitecture.com
-Refont du site larchitecture.com
+Refonte du site larchitecture.com
