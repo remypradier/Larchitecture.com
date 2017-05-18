@@ -89,7 +89,7 @@ header .navbar-nav li a:hover
 
 .who-we-are div
 {
-	opacity: 0.5.;
+	opacity: 0.5;
 }
 
 .who-we-are h2
@@ -244,11 +244,6 @@ footer li
 {
 	color: #fff;
 	margin-bottom: 15%;
-}
-
-.footer-rights a
-{
-	color: ;
 }
 
 .footer-rights p
