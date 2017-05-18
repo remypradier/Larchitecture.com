@@ -7,7 +7,7 @@ $stock = new Revue();
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->insert($_POST);
 
-    header("Location: listCommandes.php");
+    header("Location: listArticles.php");
 }
 
 ?>

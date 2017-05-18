@@ -2,7 +2,7 @@
 
 require_once "Database.class.php";
 
-class Revue
+class Commande
 {
     private $bdd;
 
@@ -25,7 +25,7 @@ class Revue
                   adresse,
                   email,
                   quantite,
-                  numero_article
+                  numero_commande,
                 FROM
                  commande
                 WHERE
@@ -48,7 +48,7 @@ class Revue
                   adresse,
                   email,
                   quantite,
-                  numero_article
+                  numero_commande,
                 FROM
                  commande";
 
@@ -61,7 +61,7 @@ class Revue
     {
         $sql = "INSERT
                 INTO
-                  commande (numero, nom, prenom, adresse, email, quantite, numero_article)
+                  commande (numero, nom, prenom, adresse, email, quantite, numero_commande)
                 VALUES(
                   :numero,
                   :nom,
@@ -69,18 +69,19 @@ class Revue
                   :adresse,
                   :email,
                   :quantite,
-                  :numero_article
+                  :numero_commande,
                 )";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute(array(
-            'numero'          => $param['numero'],
-            'nom'             => $param['nom'],
-            'prenom'          => $param['prenom'],
-            'adresse'         => $param['adresse'],
-            'email'           => $param['email'],
+            'numero'       => $param['numero'],
+            'nom'    => $param['nom'],
+            'prenom'       => $param['prenom'],
+            'adresse'  => $param['adresse'],
+            'email'   => $param['email'],
             'quantite'        => $param['quantite'],
-            'numero_article'  => $param['numero_article']
+            'numero_commande' => $param['numero_commande']
+
         ));
     }
 
@@ -90,26 +91,26 @@ class Revue
         $sql = "UPDATE
                 commande
               SET
-                 numero= :numero,
-                 nom = :nom,
-                 prenom = :prenom,
-                 adresse = :adresse,
-                 email = :email,
-                 quantite = :quantite,
-                 numero_article = :numero_article
+                 numero     = :numero,
+                 nom        = :nom,
+                 prenom     = :prenom,
+                 adresse        = :adresse,
+                 email   = :email,
+                 quantite    = :quantite,
+                 numero_commande  = :numero_commande,
               WHERE
                id = :id";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute(array(
-            'id'       => $param['id'],
-            'numero'      => $param['numero'],
-            'nom'   => $param['nom'],
-            'prenom'      => $param['prenom'],
-            'adresse'    => $param['adresse'],
-            'email'    => $param['email'],
-            'quantite'    => $param['quantite'],
-            'numero_article'    => $param['numero_article']
+            'id'        => $param['id'],
+            'numero'        => $param['numero'],
+            'nom'       => $param['nom'],
+            'prenom'    => $param['prenom'],
+            'adresse'       => $param['adresse'],
+            'email'  => $param['email'],
+            'quantite'   => $param['quantite'],
+            'numero_commande' => $param['numero_commande']
         ));
 
     }
@@ -128,3 +129,4 @@ class Revue
 
 
 }
+

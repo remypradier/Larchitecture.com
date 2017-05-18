@@ -14,7 +14,7 @@ if(isset($_POST) && count($_POST) > 0)
         {
             if($connexion->session())
             {
-                header("Location: Revues/listCommandes.php");
+                header("Location: Revues/listArticles.php");
             }
         }
     }

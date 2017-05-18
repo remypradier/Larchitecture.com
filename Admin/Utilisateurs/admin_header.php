@@ -28,9 +28,9 @@
                 <a class="navbar-brand brand pull-left" href="#"><img src="../../img/img-layout/logo_larchitecture.com.png"></a>
                 <ul class="nav nav-pills nav-stacked">
                     <li role="presentation"><a href="../Revues/listRevues.php">Revues</a></li>
-                    <li role="presentation"><a href="listArticles.php">Articles</a></li>
+                    <li role="presentation"><a href="../Articles/listArticles.php">Articles</a></li>
                     <li role="presentation"><a href="../Commandes/listCommandes.php">Commandes</a></li>
-                    <li role="presentation"><a href="../Utilisateurs/listUtilisateurs.php">Utilisateurs</a></li>
+                    <li role="presentation"><a href="listUtilisateurs.php">Utilisateurs</a></li>
                 </ul>
             </div>
         </header>

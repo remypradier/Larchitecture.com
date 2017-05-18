@@ -3,16 +3,16 @@ session_start();
 
 require_once "admin_header.php";
 
-require_once "../Class/Commande.class.php";
+require_once "../Class/Article.class.php";
 require_once "../Class/Session.class.php";
 
 $session = new Session();
-$stock = new Commande();
+$stock = new Article();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->update($_POST);
 
-    header("Location: listCommandes.php");
+    header("Location: listArticle.php");
 }
 
 $affiche = $stock->select($_GET['id']);
@@ -35,4 +35,5 @@ $session->sessionAuth();
 							</div>
 						</div>
 					</div>
+				</div>
 <?php require_once "admin_footer.php"; ?>

@@ -2,7 +2,7 @@
 
 require_once "Database.class.php";
 
-class Revue
+class Article
 {
     private $bdd;
 
@@ -26,7 +26,7 @@ class Revue
                   lieu,
                   departement
                 FROM
-                 revue
+                 article
                 WHERE
                 id = :id";
 
@@ -48,7 +48,7 @@ class Revue
                   lieu,
                   departement
                 FROM
-                 revue";
+                 article";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute();
@@ -59,7 +59,7 @@ class Revue
     {
         $sql = "INSERT
                 INTO
-                  revue (date, architectes, realisations, rubrique, lieu, departement)
+                  article (date, architectes, realisations, rubrique, lieu, departement)
                 VALUES(
                   :date,
                   :architectes,
@@ -84,7 +84,7 @@ class Revue
     {
 
        $sql = "UPDATE
-                revue
+                article
               SET
                  date         = :date,
                  architectes  = :architectes,
@@ -111,7 +111,7 @@ class Revue
     public function delete($param)
     {
         $sql = "DELETE FROM 
-                  revue
+                  article
                 WHERE
                   id = :id";
         $requete = $this->bdd->prepare($sql);

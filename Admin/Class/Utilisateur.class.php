@@ -2,7 +2,7 @@
 
 require_once "Database.class.php";
 
-class Revue
+class Utilisateur
 {
     private $bdd;
 

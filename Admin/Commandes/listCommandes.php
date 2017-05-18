@@ -1,8 +1,8 @@
 <?php
 
-require_once "../Class/Revue.class.php";
+require_once "../Class/Commande.class.php";
 
-$stock = new Revue();
+$stock = new Commande();
 
 $afficheAll = $stock->selectAll();
 
