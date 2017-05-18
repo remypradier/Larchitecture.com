@@ -575,6 +575,15 @@ footer li
    margin: 40px 0 20px 0;
 }
 
+/*				Partenaire                 */
+
+.partner
+{
+	height: 300vh;
+	border: 2px solid #4ABCD3;
+	border-radius: 12px;
+}
+
 /*				Responsive                 */
 
 
@@ -642,5 +651,10 @@ footer li
 	.regional-approach h2, .regional-approach p
 	{
 		background: rgba(0, 0, 0, 0.5)
+	}
+
+	.partner
+	{
+		height: 70vh;
 	}
 }
