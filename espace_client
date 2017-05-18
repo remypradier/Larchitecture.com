@@ -143,7 +143,64 @@
         float: left;
     }
 
+@media screen and (min-width : 1200px){
+        .historique{
 
+        }
+
+        .haut{
+            position: relative;
+            left:0;
+
+        }
+
+        .haut{}
+
+        .bas p{
+            margin-left: 100px;
+        }
+
+        table{
+            margin-left: 0px;
+        }
+
+
+    }
+
+
+    @media screen and (max-width: 768px)
+    {
+
+        table{
+            margin-left: 0px;
+        }
+
+        .historique{
+            float: left;
+            margin-top: 700px;
+            margin-left:-200px;
+
+        }
+
+
+
+
+        .bas p{
+            margin-left: 0;
+        }
+
+        .haut h1{
+            margin-left: 0;
+        }
+
+        .haut p{
+            margin-left: 0;
+        }
+
+
+
+
+    }
 
 </style>
 
