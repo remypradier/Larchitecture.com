@@ -29,7 +29,7 @@ $session->sessionAuth();
 </head>
 <body>
 <h2>Modifier</h2>
-<p><a href="listRevues.php">< Retour</a></p>
+<p><a href="../listRevues.old.php">< Retour</a></p>
 <form action="" method="post">
     <p>
         <label for="">

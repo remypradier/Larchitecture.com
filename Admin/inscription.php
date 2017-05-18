@@ -16,8 +16,8 @@
 	<meta name="email" content="ph.hadida@gmail.com" />
 
     <link rel="icon" href="../../favicon.ico">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 </head>
  <body>
     <div class="container-fluid">
@@ -31,7 +31,7 @@
 		      			<span class="icon-bar"></span>
 		     			<span class="icon-bar"></span>
 		      			</button>
-		      			<a class="navbar-brand brand pull-left" href="#"><img src="img/img-layout/logo_larchitecture.com.png"></a>
+		      			<a class="navbar-brand brand pull-left" href="#"><img src="../img/img-layout/logo_larchitecture.com.png"></a>
 		      			<div id="navbar" class="navbar-collapse collapse">
 		        			<ul class="nav navbar-nav navbar-right">
 		          				<li><a href="#">Accueil</a></li>
@@ -103,6 +103,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

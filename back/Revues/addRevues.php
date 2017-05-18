@@ -5,7 +5,7 @@ require_once "../Class/Revue.class.php";
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->insert($_POST);
 
-    header("Location: listRevues.php");
+    header("Location: listRevues.old.php");
 }
 
 $stock = new Revue();
