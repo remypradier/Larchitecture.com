@@ -16,27 +16,36 @@
 	<meta name="email" content="ph.hadida@gmail.com" />
 
     <link rel="icon" href="../../favicon.ico">
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
  <body>
     <div class="container-fluid">
     	<div class="row col-lg-10 col-lg-offset-1">
     		<header>
-	    		<nav class="navbar">
-				  <div class="container-fluid">
-				    <div class="navbar-header">
-				      <a class="navbar-brand" href="#"><img src="img/img-layout/logo_larchitecture.com.png"></a>
-				    </div>
-				    <ul class="nav navbar-nav">
-				      <li><a href="#">Accueil</a></li>
-				      <li><a href="#">Nos Revues</a></li>
-				      <li><a href="#">Commandes</a></li>
-				      <li><a href="#">Actualités</a></li>
-				      <li><a href="#">Connexion</a></li>
-				    </ul>
-				  </div>
-				</nav> 
+    		  	<div class="navbar navbar-default navbar-static-top" role="navigation" id="menu-1">
+				    <div class="navbarheader">
+		      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+		      			<span class="sr-only">Toggle navigation</span>
+		      			<span class="icon-bar"></span>
+		      			<span class="icon-bar"></span>
+		     			<span class="icon-bar"></span>
+		      			</button>
+		      			<a class="navbar-brand brand pull-left" href="#"><img src="img/img-layout/logo_larchitecture.com.png"></a>
+		      			<div id="navbar" class="navbar-collapse collapse">
+		        			<ul class="nav navbar-nav navbar-right">
+		          				<li><a href="#">Accueil</a></li>
+					      		<li><a href="#">Nos Revues</a></li>
+					      		<li><a href="#">Commandes</a></li>
+					      		<li><a href="#">Actualités</a></li>
+					      		<li><a href="#">Connexion</a></li>
+					      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+
+		       				</ul>
+		      			</div>
+
+		    		</div>
+	  			</div>
 			</header>
 			
 			<main>
@@ -48,14 +57,14 @@
 						<p class="text-center">Pour nous contacter, veuillez utiliser le formulaire ci-dessous. Merci de renseigner tous les champs.</p>
 						
 						<section>
-							<div class="col-lg-5">
+							<div class="col-lg-5 col-md-5 col-xs-12">
 								<form>	
-								<input type="" name="" placeholder="Raison sociale" class="col-md-10">
-								<input type="" name="" placeholder="Nom" class="col-md-10">
-								<input type="" name="" placeholder="Téléphone" class="col-md-10">
-								<input type="email" name="" placeholder="E-mail" class="col-md-10">
-								<label class="col-md-5">Service</label>
-								<div class="btn-group col-md-4 col-md-offset-1">
+								<input type="" name="" placeholder="Raison sociale" class="col-lg-10 col-md-12 col-xs-12">
+								<input type="" name="" placeholder="Nom" class="col-lg-10 col-md-12 col-xs-12">
+								<input type="" name="" placeholder="Téléphone" class="col-lg-10 col-md-12 col-xs-12">
+								<input type="email" name="" placeholder="E-mail" class="col-lg-10 col-md-12 col-xs-12">
+								<label class="col-lg-5 col-md-6 col-xs-12">Service</label>
+								<div class="btn-group col-lg-4 col-lg-offset-1 col-md-6 col-xs-12">
 		  							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    						Action <span class="caret"></span>
 		 							</button>
@@ -67,16 +76,16 @@
 			    						<li><a href="#">Separated link</a></li>
 		  							</ul>
 								</div>
-								<label class="col-md-5">Message</label>
-								<textarea class="col-md-10"></textarea>
+								<label class="col-lg-5 col-md-12 col-xs-12">Message</label>
+								<textarea class="col-lg-10 col-md-12 col-xs-12"></textarea>
 
 								
-								<input type="submit" name="" value="Envoyer" class="col-md-4 col-md-offset-3 submit">
+								<input type="submit" name="" value="Envoyer" class="col-lg-6 col-lg-offset-2 col-md-12 col-xs-12 send">
 								</form>	
 							</div>
-							<div class="col-lg-6 col-lg-offset-1">	
+							<div class="col-lg-6 col-lg-offset-1 col-md-7 col-xs-12">	
 								<div id="mapouter">
-		                        	<div id="gmap_canvas"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=28 Rue du Progrès, Montreuil, France, &t=&z=14&ie=UTF8&iwloc=&output=embed" marginwidth="0"></iframe><a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div>
+		                        	<div id="gmap_canvas"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=28 Rue du Progrès, Montreuil, France, &t=&z=14&ie=UTF8&iwloc=&output=embed" marginwidth="0"></iframe></div>
 		                    	</div>
 							</div>
 						</section>	
@@ -122,6 +131,8 @@
 			<P class="text-center col-lg-12 col-xs-12">2017 - copyright © Lachitecture.com Tous droits resérvés.</P>
 		</div>
 	</footer>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
