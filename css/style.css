@@ -27,10 +27,18 @@ header
 	margin-top: 2%;
 }
 
+header .navbar-default
+{
+	background: none;
+	border: none;
+}
+
 header .navbar-brand
 {
 	background: #262626;
-	height: initial
+	height: initial;
+	width: 12%;
+	margin-top: 1.5%;
 }
 
 header .navbar-brand img
@@ -52,7 +60,7 @@ header .navbar-nav
 header .navbar-nav li
 {
 	text-align: center;
-	width: 20%;
+	width: 16.66%;
 	font-size: 22px;
 }
 
@@ -376,6 +384,100 @@ footer li
 	margin-top: 7%;
 }
 
+.contact .send
+{
+	background: #4ABCD3;
+	color: #fff;
+	border-radius: 9px;
+	padding: 1%;
+}
+
+.contact button
+{
+	width: 100%;
+}
+
+/*				Admin						*/
+
+.admin-nav
+{
+	background: #262626;
+}
+
+.admin-nav .nav-pills li
+{
+	padding: 1.5%;
+}
+
+.admin-nav .nav-pills a
+{
+	text-align: center;
+	color: #fff;
+	border-top: 1px solid #5F646A !important;
+
+}
+
+.admin-nav .nav-pills a:hover
+{
+	background: none;
+	border: none;
+	color: red; /*A modifier*/
+
+}
+
+
+.admin-nav .navbar-brand
+{
+	width: 100%;
+}
+
+.admin-nav .nav-pills 
+{
+	clear: both;
+}
+
+.header-admin
+{
+  	margin: 0;
+    padding: 1.5%;
+	background: #4ABCD3;
+	color: #fff;
+}
+
+.body-admin
+{
+	background: #ECECEC;
+
+}
+
+.content-admin
+{
+	background: #fff;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-radius: 15px;
+}
+
+.content-admin h2
+{
+	color: #000;
+}
+
+.content-admin table button
+{
+	background: #4ABCD3;
+	color: #fff !important;
+}
+
+.add-admin
+{
+	background: #4ABCD3;
+	color: #fff !important;
+	margin-bottom: 2%;
+}
+
+{
+	background: #589fa
 /*				Responsive                 */
 
 
@@ -389,8 +491,38 @@ footer li
 
 @media screen and (max-width: 768px)
 {
+	header .navbar-brand
+	{
+		width: 30% !important;
+	}
+
+	header .navbar-collapse, header .navbar-collapse ul, header .navbar-collapse ul li
+	{
+		width: 100%;
+	}
+
 	footer li
 	{
 		text-align: center;
+	}
+
+	.contact iframe
+	{
+		margin-top: 5%;
+	}
+
+	.who-we-are, .regional-approach, .general-presence
+	{
+		background: none;
+	}
+		
+	.who-we-are h2, .who-we-are p ,  .general-presence h2,  .general-presence p
+	{
+		background: rgba(47, 165, 180, 65)
+	}
+		
+	.regional-approach h2, .regional-approach p
+	{
+		background: rgba(0, 0, 0, 0.5)
 	}
 }
