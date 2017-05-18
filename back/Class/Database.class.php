@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Class Database
- * @author Yann Le Scouarnec <bunkermaster@gmail.com>
- */
-
 class Database
 {
     private static $pdo = null;
@@ -17,8 +12,8 @@ class Database
             try{
                 self::$pdo = new \PDO('mysql:host=localhost;dbname=larchitecture','root', 'root');
                 self::$pdo->exec("SET NAMES UTF8;");
-            } catch(\PDOException $exception) {
-                die("ERROR.");
+            } catch(Exception $exception) {
+                die('Oops, I did it again.');
             }
         }
         return self::$pdo;
