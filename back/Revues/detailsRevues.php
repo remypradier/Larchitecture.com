@@ -5,8 +5,8 @@
  * Date: 17/05/2017
  * Time: 15:23
  */
-require_once "Class/Revue.class.php";
-require_once "Class/Session.class.php";
+require_once "../Class/Revue.class.php";
+require_once "../Class/Session.class.php";
 
 $session = new Session();
 $stock = new Revue();
@@ -14,7 +14,7 @@ $stock = new Revue();
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->update($_POST);
 
-    header("Location: revueAll.php");
+    header("Location: listRevues.php");
 }
 
 $affiche = $stock->select($_GET['id']);
@@ -29,7 +29,7 @@ $session->sessionAuth();
 </head>
 <body>
 <h2>Modifier</h2>
-<p><a href="revueAll.php">< Retour</a></p>
+<p><a href="listRevues.php">< Retour</a></p>
 <form action="" method="post">
     <p>
         <label for="">

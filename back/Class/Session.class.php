@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: lucaslecot
- * Date: 18/05/2017
- * Time: 09:42
- */
 class Session
 {
 
@@ -19,7 +13,7 @@ class Session
     {
         if(!isset($_SESSION['pseudo']))
         {
-            header("Location: Connexion.php");
+            header("Location: connexion.php");
         }
     }
 
