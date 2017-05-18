@@ -14,9 +14,8 @@
 <?php include "header.php" ?>
 
 
+<iframe src="//e.issuu.com/embed.html#28095208/48960424" frameborder="0" allowfullscreen class="col-xs-12 col-md-8 col-lg-6"></iframe>
 
-
-<iframe src="//e.issuu.com/embed.html#28095208/48956044" frameborder="0" allowfullscreen  class="col-xs-12 col-md-8 col-lg-6" ></iframe>
 
 
 <?php include "footer.php" ?>
