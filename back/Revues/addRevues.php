@@ -1,19 +1,14 @@
 <?php
 
-require_once "Class/Revue.class.php";
-require_once "Class/Connexion.class.php";
-require_once "Class/Session.class.php";
-
-$session = new Session();
-$stock = new Revue();
-$session->sessionAuth();
-
+require_once "../Class/Revue.class.php";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->insert($_POST);
 
-    header("Location: revueAll.php");
+    header("Location: listRevues.php");
 }
+
+$stock = new Revue();
 
 ?>
 
@@ -25,7 +20,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <h2>Ajouter</h2>
-    <h4><a href="revueAll.php">Liste</a></h4>
+    <p><a href="listRevues.php"><strong>Retour</strong></a></p>
+    <p><a href="listRevues.php">Liste</a></p>
     <form action="" method="post">
         <input type="text" placeholder="Nom" name="nom">
         <input type="text" placeholder="Prenom" name="prenom">
@@ -34,9 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="submit">
     </form>
 <div>
-    <?php
-        echo 'Bienvenue : '.$_SESSION['pseudo']. '<a href="deconnexion.php">Déconnexion</a>';
-    ?>
+
 </div>
 
 </body>

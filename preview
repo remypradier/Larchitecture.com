@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preview de votre revue</title>
+</head>
+<body>
+
+<?php include "header.php" ?>
+
+
+<iframe src="//e.issuu.com/embed.html#28095208/48960424" frameborder="0" allowfullscreen class="col-xs-12 col-md-8 col-lg-6"></iframe>
+
+
+
+<?php include "footer.php" ?>
+
+<style type="text/css">
+    iframe{
+        width:750px;
+        height:531px;
+        position: relative;
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    /*				Responsive                 */
+
+
+    @media screen and (min-width : 1200px)
+    {
+        .magazines:nth-child(3n+1)
+        {
+            clear: both;
+        }
+
+        iframe{
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        footer li
+        {
+            text-align: center;
+        }
+
+        iframe{
+            width: 400px;
+
+        }
+    }
+</style>

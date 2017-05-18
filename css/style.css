@@ -418,12 +418,12 @@ footer li
 
 }
 
+
 .admin-nav .nav-pills a:hover, .admin-nav .nav-pills a:focus
 {
 	background: none;
 	border: none;
 	color: #fff; /*A modifier*/
-
 }
 
 
@@ -470,11 +470,13 @@ footer li
 	color: #fff !important;
 }
 
+
 .add-admin, .submit-admin
 {
 	background: #4ABCD3;
 	color: #fff !important;
 	margin-bottom: 2%;
+
 	padding: 1%;
 	border-radius: 7px;
 }

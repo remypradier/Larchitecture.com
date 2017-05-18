@@ -16,36 +16,41 @@
 	<meta name="email" content="ph.hadida@gmail.com" />
 
     <link rel="icon" href="../../favicon.ico">
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
  <body>
     <div class="container-fluid">
     	<div class="row col-lg-10 col-lg-offset-1">
+			<header>
+    		  	<div class="navbar navbar-default navbar-static-top" role="navigation" id="menu-1">
+				    <div class="navbarheader">
+		      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+		      			<span class="sr-only">Toggle navigation</span>
+		      			<span class="icon-bar"></span>
+		      			<span class="icon-bar"></span>
+		     			<span class="icon-bar"></span>
+		      			</button>
+		      			<a class="navbar-brand brand pull-left" href="#"><img src="img/img-layout/logo_larchitecture.com.png"></a>
+		      			<div id="navbar" class="navbar-collapse collapse">
+		        			<ul class="nav navbar-nav navbar-right">
+		          				<li><a href="#">Accueil</a></li>
+					      		<li><a href="#">Nos Revues</a></li>
+					      		<li><a href="#">Commandes</a></li>
+					      		<li><a href="#">Actualités</a></li>
+					      		<li><a href="#">Connexion</a></li>
+					      		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+		       				</ul>
+		      			</div>
 
-
-
-    		<header>
-	    		<nav class="navbar">
-				  <div class="container-fluid">
-				    <div class="navbar-header">
-				      <a class="navbar-brand" href="#"><img src="img/img-layout/logo_larchitecture.com.png"></a>
-				    </div>
-				    <ul class="nav navbar-nav">
-				      <li><a href="#">Accueil</a></li>
-				      <li><a href="#">Nos Revues</a></li>
-				      <li><a href="#">Commandes</a></li>
-				      <li><a href="#">Actualités</a></li>
-				      <li><a href="#">Connexion</a></li>
-				    </ul>
-				  </div>
-				</nav> 
+		    		</div>
+	  			</div>
 			</header>
 			
 
 			<main>
 				<div class="row">
-					<h3 class="last-post col-lg-4 col-lg-offset-1">Nos dernères parutions</h3>
+					<h3 class="last-post col-lg-4 col-lg-offset-1 col-xs-10 col-xs-offset-1">Nos dernères parutions</h3>
 				</div>
 				<div class="row">
 					
@@ -265,5 +270,8 @@
 		</div>
 	</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

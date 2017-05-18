@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: lucaslecot
- * Date: 17/05/2017
- * Time: 13:30
- */
 require_once "Database.class.php";
 
 class Revue
