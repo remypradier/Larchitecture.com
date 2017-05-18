@@ -20,3 +20,45 @@
 
 
 <?php include "footer.php" ?>
+
+<style type="text/css">
+    iframe{
+        width:750px;
+        height:531px;
+        position: relative;
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    /*				Responsive                 */
+
+
+    @media screen and (min-width : 1200px)
+    {
+        .magazines:nth-child(3n+1)
+        {
+            clear: both;
+        }
+
+        iframe{
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        footer li
+        {
+            text-align: center;
+        }
+
+        iframe{
+            width: 400px;
+
+        }
+    }
+</style>
