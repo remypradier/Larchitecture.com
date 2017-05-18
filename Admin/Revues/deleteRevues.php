@@ -12,4 +12,4 @@ $stock = new Revue();
 
 $stock->delete($_GET['id']);
 
-header("Location: listRevues.php");
+header("Location: listCommandes.php");
