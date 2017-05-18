@@ -35,7 +35,7 @@ header .navbar-default
 
 header .navbar-brand
 {
-	background: #262626;
+	background: #262626 !important;
 	height: initial;
 	width: 12%;
 	margin-top: 1.5%;
@@ -202,7 +202,7 @@ footer
 {
 	background: #262626;
 	margin-top: 5%;
-	min-height: 200px !important;
+	/*min-height: 200px !important;*/
 }
 
 footer h3
@@ -402,6 +402,7 @@ footer li
 .admin-nav
 {
 	background: #262626;
+	height: 100vh;
 }
 
 .admin-nav .nav-pills li
@@ -417,12 +418,12 @@ footer li
 
 }
 
-.admin-nav .nav-pills a:hover
+
+.admin-nav .nav-pills a:hover, .admin-nav .nav-pills a:focus
 {
 	background: none;
 	border: none;
-	color: red; /*A modifier*/
-
+	color: #fff; /*A modifier*/
 }
 
 
@@ -469,15 +470,111 @@ footer li
 	color: #fff !important;
 }
 
-.add-admin
+
+.add-admin, .submit-admin
 {
 	background: #4ABCD3;
 	color: #fff !important;
 	margin-bottom: 2%;
+
+	padding: 1%;
+	border-radius: 7px;
 }
 
+.add-admin a
 {
-	background: #589fa
+	text-decoration: none;
+}
+
+.content-admin table button:hover, .add-admin:hover
+{
+	background: #589FAC;
+}
+
+.content-admin form input, .content-admin form label
+{
+	margin-top: 3%;
+}
+
+.admin-input
+{
+	background: none;
+	border: 2px solid #C3C3C3;
+	border-radius: 7px;
+	padding: 0.7%;
+	color: #C3C3C3;
+}
+
+/*				Espace Client						*/
+
+.customer
+{
+	background: #62B5C4;
+	color: #fff;
+	padding: 2%;	
+}
+
+.customer-panel
+{
+	background: #EEEEEE;
+	margin-top: 3%;
+}
+
+.customer-panel h4
+{
+	background: #62B5C4;
+	padding: 1%;
+}
+
+.customer-panel p
+{
+	
+	margin-top: 2%;
+}
+
+.customer-panel div
+{
+	clear: both;
+}
+
+/*				Commande*/
+
+.title-commande {
+   padding: 20px;
+   background-color: #4ABCD3;
+   color: #ffffff;
+   font-family: Raleway;
+}
+
+.bg-bk-opaque {
+   background-color: rgba(0, 0, 0, 0.50);
+}
+
+.color-white {
+   color: white;
+   font-weight: 400;
+}
+
+.cl-blue {
+   color: #4ABCD3;
+}
+
+.cl-btn-blue {
+   background: #4ABCD3 !important;
+   border: #4ABCD3 !important;
+   color: #ffffff !important;
+   font-family: Arial !important;
+   font-weight: 100;
+}
+
+.quantite {
+   margin: 170px 0 0 0;
+}
+
+.img-dtl {
+   margin: 40px 0 20px 0;
+}
+
 /*				Responsive                 */
 
 
@@ -489,12 +586,33 @@ footer li
 	}
 }
 
+@media screen and (max-width : 1503px)
+{
+	header .navbar-nav li
+	{
+		font-size: 18px;
+	}	
+}
+
+@media screen and (max-width : 940px)
+{
+	header .navbar-nav li
+	{
+		font-size: 15px;
+	}	
+}
+
 @media screen and (max-width: 768px)
 {
 	header .navbar-brand
 	{
 		width: 30% !important;
 	}
+
+	header .navbar-nav li
+	{
+		font-size: 22px;
+	}	
 
 	header .navbar-collapse, header .navbar-collapse ul, header .navbar-collapse ul li
 	{
