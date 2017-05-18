@@ -1,0 +1,396 @@
+/*		Font		*/
+
+@font-face {
+  font-family: 'Raleway Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), local(''), url("../font/Raleway-Bold.woff") format('woff');
+}
+
+
+.content
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+p
+{
+	font-family: arial;
+	font-size: 18px;
+}
+
+/*		Header          */
+
+header
+{
+	margin-top: 2%;
+}
+
+header .navbar-brand
+{
+	background: #262626;
+	height: initial
+}
+
+header .navbar-brand img
+{
+	width: 100%;
+}
+
+header .navbar-header
+{
+	width: 20%;
+}
+
+header .navbar-nav
+{
+	width: 80%;
+	padding: 2%;
+}
+
+header .navbar-nav li
+{
+	text-align: center;
+	width: 20%;
+	font-size: 22px;
+}
+
+header .navbar-nav li a
+{
+	color: #000 !important;
+}
+
+header .navbar-nav li a:hover
+{
+	background: none;
+	color: #2FA5B4 !important;
+	text-decoration: underline !important;
+}
+
+/*			Main Homepage	*/
+
+.who-we-are
+{
+	background: url(../img/img-layout/building01.jpg);
+	margin-top: 5%;
+	padding-bottom: 31%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.who-we-are div
+{
+	opacity: 0.5.;
+}
+
+.who-we-are h2
+{
+	margin-top: 4%;
+	padding: 5%;
+	background: rgba(47, 165, 180, 0.5) ;
+	color: #fff;	
+	font-size: 45px;
+	font-family: "Raleway Bold";
+}
+
+.who-we-are p
+{
+	margin-top: 4%;
+	padding: 5%;
+	background: rgba(47, 165, 180, 0.5) ;
+	color: #fff;	
+}
+
+.regional-approach
+{
+	background: url(../img/img-layout/building03.jpg);
+	margin-top: -27%;
+	padding-bottom: 3%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.regional-approach h2
+{
+	margin-top: 4%;
+	padding: 5%;
+	background: rgba(0, 0, 0, 0.5) ;
+	color: #fff;	
+}
+
+.regional-approach p
+{
+	margin-top: 4%;
+	padding: 5%;
+	background: rgba(0, 0, 0, 0.5) ;
+	color: #fff;	
+}
+
+.general-presence
+{
+	background: url(../img/img-layout/building02.jpg);
+	padding-bottom: 3%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.general-presence h2
+{
+	margin-top: 4%;
+	padding: 5%;
+	background: rgba(47, 165, 180, 0.5) ;
+	color: #fff;	
+}
+
+.general-presence p
+{
+	margin-top: 4%;
+	padding: 5%;
+	background: rgba(47, 165, 180, 0.5) ;
+	color: #fff;	
+}
+
+.actuality h2 
+{
+	text-align: center;
+	color: #2FA5B4;
+	margin-top: 4%;
+}
+
+.actuality div
+{
+	margin-top: 5%;
+}
+
+.actuality div:nth-child(2n+1)
+{
+	margin-top: 3%;
+}
+
+.actuality img
+{
+	width: 100%;
+}
+
+.actuality h4
+{
+	text-align: center;
+	margin-top: 10%;
+}
+
+.actuality a
+{
+	text-align: center;
+	color: rgba(47, 165, 180, 65);
+	margin-top: 2%;
+}
+
+/*		Footer         */
+
+footer
+{
+	background: #262626;
+	margin-top: 5%;
+	min-height: 200px !important;
+}
+
+footer h3
+{
+	font-family: arial;
+	font-size: 22px;
+	color: rgba(47, 165, 180, 65);
+}
+
+footer h5
+{
+	font-size: 22px;
+	color: #fff;
+}
+
+footer .email
+{
+	background: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 0.7%;
+	color: #fff;
+}
+
+footer .submit
+{
+	background: #fff;
+	border: none;
+	color: #262626;
+	padding: 1%;
+}
+
+footer ul
+{
+	margin-top: 20px;
+}
+
+footer li
+{
+	color: #fff;
+	margin-bottom: 15%;
+}
+
+.footer-rights a
+{
+	color: ;
+}
+
+.footer-rights p
+{
+	color: #fff;
+}
+
+/*				Page revue            */
+
+.last-post
+{
+	background: #62B5C4;
+	color: #fff;
+	padding: 2%;
+}
+
+.magazines
+{
+	margin-top: 3%;
+}
+
+.magazines h3
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+.magazine
+{
+	background: #ddd;
+}
+
+.magazine img
+{
+	padding: 8% 0;
+}
+
+.magazine p, .magazine a
+{
+	text-align: center;
+}
+
+.magazine a
+{
+	margin-bottom: 5%;
+}
+
+.pagination-nav
+{
+	clear: both;
+}
+
+.pagination li a
+{
+	color: #000 !important;
+	background-color: none !important;
+	border: none !important;
+}
+
+.all-region
+{
+	background: url(../img/img-layout/building07.jpg);
+	padding-bottom: 3%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.regional-post
+{
+	background: #565758;
+	color: #fff;
+	padding: 2%;
+}
+
+.all-region li, .all-region h3
+{
+	color: #fff;
+}
+
+/*				Connexion        */
+
+.conection, .signup
+{
+	margin-top: 7%;
+	margin-bottom: 10%;
+}
+
+.conection input, .signup input, .contact input
+{
+	background: none;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	color: #000;
+	margin-top: 7%;
+}
+
+.conection a 
+{
+	text-align: right;
+	margin-top: 3%;
+}
+
+.conection .submit, .signup .submit
+{
+	background: #4ABCD3;
+	color: #fff;
+	border-radius: 9px;
+	padding: 1%;
+	margin-top: 5%;
+}
+
+/*				Contact						*/
+
+.contact
+{
+	margin-top: 5%;
+}
+
+.contact label, .contact .btn-group
+{
+	margin-top: 7%;
+}
+
+.contact textarea
+{
+	margin-top: 7%;
+	border: 2px solid #ddd;
+}
+
+.contact section
+{
+	margin-top: 7%;
+}
+
+/*				Responsive                 */
+
+
+@media screen and (min-width : 1200px)
+{
+	.magazines:nth-child(3n+1)
+	{
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	footer li
+	{
+		text-align: center;
+	}
+}
