@@ -14,7 +14,7 @@ if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_p
         {
             if($inscription->session())
             {
-                header("Location: ajout.php");
+                header("Location: listCategories.php");
             }
         }
     }
@@ -37,7 +37,7 @@ if (isset($_POST['pseudo']) && isset($_POST['pass']) && isset($_POST['confirme_p
 
 <main>
     <div class="verif"><?php if(isset($verif)){ echo $verif;} ?></div>
-    <form action="Inscription.php" method="post">
+    <form action="inscription.php" method="post">
         <table>
             <tr>
                 <td>Pseudo</td>
