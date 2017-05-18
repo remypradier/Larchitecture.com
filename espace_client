@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Votre Espace Client</title>
+</head>
+<body>
+
+<?php include 'header.php' ?>
+
+<main>
+    <div class="col-lg-12 col-md-12 col-xs-12 haut">
+        <h1>Espace Client</h1>
+
+        <p class="col-lg-12 col-md-12 col-xs-12 nom">
+            Monsieur Albert Demain <br>
+            <a href="#">Gérer mes informations personnelles</a>
+        </p>
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12 bas">
+        <div class="compte">
+        <h2 class="col-lg-6 col-md-12 col-xs-12">Récaputilatif de votre compte</h2><br>
+        <p class="col-lg-12 col-md-12 col-xs-12"> Commande en cours : Aucune<br><br>
+            Ma dernière commande</p>
+            <img src="img/img-content/revue_ile_de_france.jpg" alt="LArchitecture Ile De France">
+            <p class="col-lg-4 col-md-4 col-xs-4 detail">Ile De France <br>
+        N°287-2017 <br>
+        1 article <br>
+        prix : 19€ <br>
+        Total : 22€ <br>
+        Statut : <span style="color: green">Délivré</span></p>
+        <div class="col-lg-12 col-md-12 col-xs-12 adress">
+            <table class="col-lg-6 col-md-6 col-xs-6">
+                <tr>
+                    <th>Adresse de facturation :</th>
+                    <td>5 Rue de L'Eglise <br> 94300 <br> Vincennes</td>
+                </tr>
+                <tr>
+                    <th>Adresse de Livraison :</th>
+                    <td>5 Rue de L'Eglise <br> 94300 <br> Vincennes</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+           <div class=" historique">
+               <h2 class="col-lg-12 col-md-12 col-xs-12">Mon historique</h2>
+               <ul>
+                   <li>Mes commandes</li>
+                   <li>Mes abonnements</li>
+                   <li>Revues consultées</li>
+               </ul>
+           </div>
+
+    </div>
+</main>
+
+
+<style type="text/css">
+    /*              espace client                 */
+    .haut{
+        background-color: white;
+        height: 30%;
+        width: 100%;
+
+    }
+
+    .haut h1{
+        background-color: #3c3c3c;
+        color: white;
+        font-family: sans-serif;
+        font-size: 25px;
+        width: 200px;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    .nom{
+        margin-left: 100px;
+        margin-top: 50px; line-height: 2em;
+    }
+
+    .bas{
+        background-color:lightblue;
+
+    }
+
+    .bas h2{
+        background-color: #3c3c3c;
+        color: #fff;
+        font-size: 25px;
+
+    }
+
+    .bas h3{
+        font-size: 20px;
+        background-color: red;
+        float: left;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .bas p{
+
+        margin-left: 100px;
+    }
+
+
+    .detail{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .compte{
+        float: left;
+        width: 70%;
+        height: inherit;
+    }
+
+    table{
+        margin-left: 300px;
+    }
+
+    .historique:before{
+        content:"";
+        background-color: #1b6d85;
+        width: 5px;
+        height: 500px;
+    }
+    .historique{
+        float: right;
+        width: 30%;
+        height: 500px;
+        padding-top: 200px;
+    }
+
+    .compte img{
+        float: left;
+    }
+
+
+
+</style>
+
+
+<?php include 'footer.php' ?>
+
