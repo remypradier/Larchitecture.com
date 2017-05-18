@@ -27,7 +27,7 @@
             <div class="admin-nav col-lg-2">
                 <a class="navbar-brand brand pull-left" href="#"><img src="../../img/img-layout/logo_larchitecture.com.png"></a>
                 <ul class="nav nav-pills nav-stacked">
-                    <li role="presentation"><a href="listRevues.php">Revues</a></li>
+                    <li role="presentation"><a href="listCommandes.php">Revues</a></li>
                     <li role="presentation"><a href="#">Articles</a></li>
                     <li role="presentation"><a href="#">Commandes</a></li>
                     <li role="presentation"><a href="#">Utilisateurs</a></li>
