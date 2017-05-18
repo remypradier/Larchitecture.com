@@ -1,13 +1,13 @@
 <?php
 
-require_once "../Class/Revue.class.php";
+require_once "../Class/Utilisateur.class.php";
 
-$stock = new Revue();
+$stock = new Utilisateur();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->insert($_POST);
 
-    header("Location: listArticles.php");
+    header("Location: listUtilisateurs.php");
 }
 
 ?>

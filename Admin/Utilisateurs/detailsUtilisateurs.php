@@ -3,16 +3,16 @@ session_start();
 
 require_once "admin_header.php";
 
-require_once "../../Class/Revue.class.php";
-require_once "../../Class/Session.class.php";
+require_once "../Class/Utilisateur.class.php";
+require_once "../Class/Session.class.php";
 
 $session = new Session();
-$stock = new Revue();
+$stock = new Utilisateur();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->update($_POST);
 
-    header("Location: listRevues.old.php");
+    header("Location: listUtilisateurs.php");
 }
 
 $affiche = $stock->select($_GET['id']);

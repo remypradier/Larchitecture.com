@@ -2,7 +2,7 @@
 
 require_once "Database.class.php";
 
-class Utilisateur
+class Commande
 {
     private $bdd;
 
@@ -19,16 +19,15 @@ class Utilisateur
     {
         $sql = "SELECT
                   id,
+                  numero,
                   nom,
                   prenom,
-                  age,
-                  fonction,
                   adresse,
-                  cp,
-                  telephone,
-                  email
+                  email,
+                  quantite,
+                  numero_commande,
                 FROM
-                 utilisateur
+                 commande
                 WHERE
                 id = :id";
 
@@ -36,23 +35,22 @@ class Utilisateur
         $requete->execute(array(
             'id' => $param
         ));
-       return $requete->fetch();
+        return $requete->fetch();
     }
 
     public function selectAll()
     {
         $sql = "SELECT
                   id,
+                  numero,
                   nom,
                   prenom,
-                  age,
-                  fonction,
                   adresse,
-                  cp,
-                  telephone,
-                  email
+                  email,
+                  quantite,
+                  numero_commande,
                 FROM
-                 utilisateur";
+                 commande";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute();
@@ -63,28 +61,26 @@ class Utilisateur
     {
         $sql = "INSERT
                 INTO
-                  utilisateur (nom, prenom, age, fonction, adresse, cp, telephone, email)
+                  commande (numero, nom, prenom, adresse, email, quantite, numero_commande)
                 VALUES(
+                  :numero,
                   :nom,
                   :prenom,
-                  :age,
-                  :fonction,
                   :adresse,
-                  :cp,
-                  :telephone,
-                  :email
+                  :email,
+                  :quantite,
+                  :numero_commande,
                 )";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute(array(
-            'nom'       => $param['nom'],
-            'prenom'    => $param['prenom'],
-            'age'       => $param['age'],
-            'fonction'  => $param['fonction'],
-            'adresse'   => $param['adresse'],
-            'cp'        => $param['cp'],
-            'telephone' => $param['telephone'],
-            'email'     => $param['email']
+            'numero'       => $param['numero'],
+            'nom'    => $param['nom'],
+            'prenom'       => $param['prenom'],
+            'adresse'  => $param['adresse'],
+            'email'   => $param['email'],
+            'quantite'        => $param['quantite'],
+            'numero_commande' => $param['numero_commande']
 
         ));
     }
@@ -92,31 +88,29 @@ class Utilisateur
     public function update($param)
     {
 
-       $sql = "UPDATE
-                utilisateur
+        $sql = "UPDATE
+                commande
               SET
+                 numero     = :numero,
                  nom        = :nom,
                  prenom     = :prenom,
-                 age        = :age,
-                 fonction   = :fonction,
-                 adresse    = :adresse,
-                 cp         = :cp,
-                 telephone  = :telephone,
-                 email      = :email
+                 adresse        = :adresse,
+                 email   = :email,
+                 quantite    = :quantite,
+                 numero_commande  = :numero_commande,
               WHERE
                id = :id";
 
         $requete = $this->bdd->prepare($sql);
         $requete->execute(array(
             'id'        => $param['id'],
+            'numero'        => $param['numero'],
             'nom'       => $param['nom'],
             'prenom'    => $param['prenom'],
-            'age'       => $param['age'],
-            'fonction'  => $param['fonction'],
-            'adresse'   => $param['adresse'],
-            'cp'        => $param['cp'],
-            'telephone' => $param['telephone'],
-            'email'     => $param['email']
+            'adresse'       => $param['adresse'],
+            'email'  => $param['email'],
+            'quantite'   => $param['quantite'],
+            'numero_commande' => $param['numero_commande']
         ));
 
     }
@@ -124,7 +118,7 @@ class Utilisateur
     public function delete($param)
     {
         $sql = "DELETE FROM 
-                  utilisateur
+                  commande
                 WHERE
                   id = :id";
         $requete = $this->bdd->prepare($sql);

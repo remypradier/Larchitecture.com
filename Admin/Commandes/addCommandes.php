@@ -1,13 +1,13 @@
 <?php
 
-require_once "../Class/Revue.class.php";
+require_once "../Class/Commande.class.php";
 
-$stock = new Revue();
+$stock = new Commande();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stock->insert($_POST);
 
-    header("Location: listRevues.php");
+    header("Location: listCommandes.php");
 }
 
 ?>

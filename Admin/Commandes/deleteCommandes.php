@@ -6,10 +6,10 @@
  * Time: 15:51
  */
 
-require_once "../../Class/Revue.class.php";
+require_once "../Class/Commande.class.php";
 
-$stock = new Revue();
+$stock = new Commande();
 
 $stock->delete($_GET['id']);
 
-header("Location: listArticles.php");
+header("Location: listCommandes.php");

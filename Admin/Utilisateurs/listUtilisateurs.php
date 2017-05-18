@@ -1,8 +1,8 @@
 <?php
 
-require_once "../Class/Revue.class.php";
+require_once "../Class/Utilisateur.class.php";
 
-$stock = new Revue();
+$stock = new Utilisateur();
 
 $afficheAll = $stock->selectAll();
 
@@ -29,13 +29,13 @@ require_once "admin_header.php";
                         <td><?= $affichage['id'] ?></td>
                         <td><?= $affichage['id'] ?></td>
                         <td><?= $affichage['id'] ?></td>
-                        <td><a href="detailsRevues.php?id=<?= $affichage['id'] ?>"><button type="button" class="btn btn-default col-lg-10 col-lg-offset-1">Modifier</button></a></td>
-                        <td><a href="deleteRevues.php?id=<?= $affichage['id'] ?>"><button type="button" class="btn btn-default col-lg-10 col-lg-offset-1">Supprimer</button></a></td>
+                        <td><a href="detailsUtilisateurs.php?id=<?= $affichage['id'] ?>"><button type="button" class="btn btn-default col-lg-10 col-lg-offset-1">Modifier</button></a></td>
+                        <td><a href="deleteUtilisateurs.php?id=<?= $affichage['id'] ?>"><button type="button" class="btn btn-default col-lg-10 col-lg-offset-1">Supprimer</button></a></td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>
             </table>
-            <a href="addRevues.php" class="col-lg-6 col-lg-offset-3 add-admin text-center">Ajouter</a>
+            <a href="addUtilisateurs.php" class="col-lg-6 col-lg-offset-3 add-admin text-center">Ajouter</a>
         </div>
     </div>
 </div>
